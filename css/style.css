@@ -4,3 +4,36 @@
 	text-decoration: none;
 	list-style: none;
 }
+
+header{
+	margin-left: 100px;	
+}
+
+.nav_header {
+	width: 1512px;
+	height: 150px;
+}
+
+.nav_header {
+	display: flex;
+}
+
+.ul_upper {
+	display: flex;
+}
+
+.div_avatar {
+	display: flex;
+}
+
+.ul_lower {
+	margin-left: auto;
+	display: flex;
+    justify-content: flex-end;
+}
+
+.ul_infopmation {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}

@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NiXXCOL</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="normalize.css"
+    <link rel="stylesheet" type="text/css" href="css/style.css">>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <div>
+        <nav class="nav_header">
+            <ul class="ul_upper">
+                <div class="div_avatar">
                 <li><a href="index.html"><img class="" src="icons/Vector.svg"></a></li>
                 <li><a href="index.html"><img class="" src="icons/Nixxsol.png"></a></li>
                 </div>
             </ul>
-            <ul>
-                <li><a href="#about" class="">О нас</a></li>
-                <li><a href="#" class="">Помощь в IT</a></li>
-                <li><a href="#" class="">Портфолио</a></li>
-                <li><a href="#" class="">Обратная связь</a></li>
+            <ul class="ul_lower">
+                <li><a href="#about" class="ul_infopmation">О нас</a></li>
+                <li><a href="#" class="ul_infopmation">Помощь в IT</a></li>
+                <li><a href="#" class="ul_infopmation">Портфолио</a></li>
+                <li><a href="#" class="ul_infopmation">Обратная связь</a></li>
             </ul>
         </nav>
     </header>
@@ -76,13 +75,72 @@
             </div>
             <div>
                 <form>
-                    <input>
+                    <input type="text" id="name" placeholder="Имя" required />
+                    <input type="text" id="" placeholder="Электронная почта" readonly/>
+                    <input type="text" id="" placeholder="Телефон (необязательно)" readonly/>
+                    <input type="text" id="" placeholder="Расскажите нам о проекте, над которым вы работаете (необязательно)" readonly/>
+                    <button>Отправить</button>
+                    
                 </form>
             </div>
         </div>
+        <div>
+            <img src="icons/Frame 48096173.png" alt="">
+            <img src="icons/Frame 48096174.png" alt="">
+            <img src="icons/Frame 48096175.png" alt="">
+            <img src="icons/Frame 48096176.png" alt="">
+            <img src="icons/Frame 48096177.png" alt="">
+        </div>
+        <div>
+            <img class="" src="icons/Vector.svg">
+            <img src="icons/Nixxsol.png" alt="">
+        </div>
     </main>
-    <footer>
-        <p> &copy; 2024г. <i><b> Все права защищены. </b></i></p>   
+    <footer style="background-color: black;">
+        <div>
+            <div>
+                <div>
+                    <span>
+                        <img src="icons/Vector_.svg" alt="">
+                        <p>+92 300 1234567</p>
+                    </span>
+                    <span>
+                        <img src="icons/Vector_6.svg" alt="">
+                        <p>info@nixxsol.com</p>
+                    </span>
+                    <span>
+                        <img src="icons/Vector_5.svg" alt="">
+                        <p>Я прошу прощения за то, что сижу на консилиуме. Я либеро, лектор, судья Маттис А.</p>
+                    </span>
+
+                </div>
+                <div>
+                    <span>
+                        <ul>
+                            <li><a href="#about" class="">О нас</a></li>
+                            <li><a href="#" class="">Помощь в IT</a></li>
+                            <li><a href="#" class="">Портфолио</a></li>
+                            <li><a href="#" class="">Обратная связь</a></li>
+                        </ul> 
+                    </span>
+                    <span>
+                        <form action="" >
+                            <label>Оставайтесь на связи</label>
+       	   	  		        <input type="email" id="" placeholder="Адрес электронной почты" readonly/>
+                            <button>Отправить</button>
+       	   	  	        </form>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p> &copy;  2022 Nixsol <i><b> Все права защищены. </b></i></p>
+                <span>
+                    <img src="icons/Vector_2.svg" alt="">
+                    <img src="icons/Vector_3.svg" alt="">
+                    <img src="icons/Vector_4.svg" alt="">
+                </span>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
