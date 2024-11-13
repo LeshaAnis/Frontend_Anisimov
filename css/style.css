@@ -102,6 +102,7 @@ header{
 	height: 289px;
 	display: flex;
 	margin-left: 100px;
+	margin-bottom: 100px;
 }
 
 .div_h1_information {
@@ -172,4 +173,63 @@ header{
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 
+}
+
+.div_services {
+	background: linear-gradient(12.79deg,#E92129 15.17%, #242424 50.25%);
+}
+
+.h1_services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 60px;
+	padding-top: 50px;
+	font-size: 80px;
+	color: #E92129;
+}
+
+.div_services_section {
+	margin-left: 100px;
+	margin-right: 100px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services_section {
+	width: 277px;
+	height: 231px;
+	padding: 16px 0px 0px 0px;
+	margin: 20px;
+	background-color: #ffffff;
+}
+
+.services_section_images {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.services_section_upper {
+	display: flex;
+	justify-content: center;
+}
+
+.services_section_lower {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.div_portfolio {
+	display: flex;
+}
+
+.div_portfolio_supremus {
+	display: flex;
+	align-items: center;
+	margin-left: 100px;
 }
