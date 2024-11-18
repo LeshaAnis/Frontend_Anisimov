@@ -30,7 +30,9 @@ header{
 }
 
 .ul_lower {
-	margin-left: auto;
+	position: absolute;
+	right: 0;
+	margin-right: 100px;
 	display: flex;
     justify-content: flex-end;
 	align-items: center;
@@ -274,7 +276,157 @@ header{
 }
 
 .span_banner_img {
-
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.contact_us_communis {
+	display: flex;
+	background: linear-gradient(120.79deg, #242424 13.25%, #E92129 75.17%);
+}
+
+.contact_us_supremus {
+	margin: 100px;
+	width: 578px;
+	height: 327px;
+}
+
+.p_recomendation_supremus {
+	font-family: Proxima Nova;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.h1_recomendation {	
+	font-family: Proxima Nova;
+	font-size: 80px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.p_recomendation_inferion {
+	font-family: Proxima Nova;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.contact_us_inferior {
+	margin: 100px;
+	margin-left: 200px;
+}
+
+.form_contact_us_inferior {
+	width: 477px;
+	height: 363px;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.input_contact_us_inferior {
+	width: 477px;
+	height: 42pxpx;
+	padding: 6px 0px 6px 20px;
+	font-family: Proxima Nova;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 10px;
+	background: transparent;
+	opacity: 0.4px;
+	border: 1px solid #FFFFFF
+}
+
+.input_contact_us_inferiors {
+	width: 477px;
+	height: 110px;
+	padding: 6px 0px 0px 20px;
+	font-family: Proxima Nova;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 10px;
+	background: transparent;
+	opacity: 0.4px;
+	border: 1px solid #FFFFFF;
+}
+
+.button_contact_us_inferior {
+
+	padding: 14px 24px 14px 24px;
+	background-color: #E4252C;
+	font-size: 20px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.div_banner_images {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.span_banner_images {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.div_secundum_gradum_supremus{
+	display: flex;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.ul_tertium_gradum_inferior {
+	display: flex;
+	margin: 20px;
+}
+
+.div_secundum_gradum_inferior{
+
+	display: flex;
+	background-color: #E4252C;
+
+}
+
+.div_tertium_gradum_supremus {
+	margin-left: 100px;
+	width: 485.91px;
+	height: 187.5px;
+}
+
+.span_tertium_gradum_supremus {
+	display: flex;
+}
+
+.img_tertium_gradum_supremus {
+	margin: 10px;
+}
+
+.p_tertium_gradum_supremus {
+	margin: 10px;
+}
+
+.p_secundum_gradum_inferior {
+	margin-left: 100px;
+	font-family: Proxima Nova;
+	font-size: 21px;
+	font-weight: 400;
+	padding: 20px;
+}
+
+.span_secundum_gradum_inferior {
+	padding: 20px;
+	position: absolute;
+	right: 0;
+	margin-right: 100px;
+}
+
+.img_secundum_gradum_inferior {
+	margin: 5px;
 }
