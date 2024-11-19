@@ -430,3 +430,83 @@ header{
 .img_secundum_gradum_inferior {
 	margin: 5px;
 }
+
+.div_tertium_gradum_inferior {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 100px;
+	width: 641px;
+	height: 183px;
+
+
+}
+
+.li_tertium_gradum_inferior{
+	font-family: Proxima Nova;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+	margin: 0px 20px;
+}
+
+
+
+
+.span_tertium_gradum_inferior {
+	width: 640px;
+	height: 109px;
+	
+
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+
+}
+
+.form_tertium_gradum_inferior {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются в колонку */
+
+}
+
+.form-label {
+    margin-bottom: 10px; /* Отступ между меткой и полем ввода */
+
+}
+
+.input-container {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+    width: 100%; /* Задаем ширину контейнера */
+	width: 640px;
+	height: 60px;
+	padding: 8.4px 8.4px 8.4px 18.9px;
+
+	border-radius: 5.25px 0px 0px 0px;
+}
+
+.input_tertium_gradum_inferior {
+    width: 80%; /* Поле ввода занимает всю ширину контейнера */
+    padding: 10px; /* Отступы внутри поля ввода */
+    padding-right: 80px; /* Добавляем отступ справа для кнопки */
+    border: 1px solid #ccc; /* Рамка вокруг поля ввода */
+
+}
+
+.button_tertium_gradum_inferior {
+    position: absolute; /* Абсолютное позиционирование для кнопки */
+    right: 10px; /* Располагаем кнопку справа внутри поля ввода */
+    top: 50%; /* Центрируем кнопку по вертикали */
+    transform: translateY(-50%); /* Корректируем вертикальное выравнивание кнопки */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    background-color: #E4252C; /* Цвет фона кнопки */
+    color:white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку у кнопки */
+    border-radius: 4px; /* Закругленные углы кнопки */
+
+}
+
+.button_tertium_gradum_inferior:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
