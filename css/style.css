@@ -281,34 +281,33 @@ header{
 	color:#ffffff;
 }
 
-.div_portfolio_inferior {
-	margin-top: 88px;
-}
 /* Слайдер */
 
-/*.slider {
+.swiper-slider {
     position: relative;
-    width: 80%;
-    max-width: 800px;
+    width: 800px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.slider-wrapper {
+.wrapper-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.slide {
-    position: relative;
-    min-width: 100%;
-    box-sizing: border-box;
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
 
-.slide img {
-    width: 100%;
-    display: block;
+
+
+.img_swipper {
+    width:800px;
+	margin: 50px;
     border-radius: 10px;
 }
 
@@ -356,7 +355,7 @@ header{
     transform: translateY(-50%);
 }
 
-button {
+.prev {
     background-color: red;
     border: none;
     color: white;
@@ -368,9 +367,25 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.next {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover {
     background-color: darkred;
-}*/
+}
+
+.next:hover {
+    background-color: darkred;
+}
 
 /* Слайдер */
 .div_banner_img {

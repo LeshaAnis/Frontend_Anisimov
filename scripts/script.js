@@ -1,42 +1,35 @@
-var swiper = new Swiper('swiper',{
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
+// Инициализация Swiper
+const swiper = new Swiper('.swiper-slider', {
+  direction: 'horizontal', // Горизонтальное направление
+  loop: true, // Зацикливание слайдов
 
-  // If we need pagination
+  slidesPerView: 1, // Показывать только один слайд
+  spaceBetween: 0, // Без промежутков между слайдами
+
   pagination: {
-    el: '.swiper-pagination',
+      el: '.swiper-pagination',
+      clickable: true,
   },
 
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+      nextEl: '.next',
+      prevEl: '.prev',
   },
 });
 
-const sliderWrapper = document.querySelector('.slider-wrapper');
-const slides = document.querySelectorAll('.slide');
+// Обработчики событий для кнопок навигации
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
-let currentIndex = 0;
+// Проверяем, доступны ли кнопки в DOM
+if (prevButton && nextButton) {
+  prevButton.addEventListener('click', () => {
+      swiper.slidePrev(); // Переход к предыдущему слайду
+  });
 
-function updateSliderPosition() {
-    sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+  nextButton.addEventListener('click', () => {
+      swiper.slideNext(); // Переход к следующему слайду
+  });
+} else {
+  console.error("Кнопки навигации не найдены в DOM.");
 }
-
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-    updateSliderPosition();
-});
-
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
-    updateSliderPosition();
-});
