@@ -386,7 +386,7 @@ header{
 
 .div_portfolio {
 	display: flex;
-	margin-bottom: 100px;
+	margin: 150px 0px;
 }
 
 .div_portfolio_supremus {
@@ -507,10 +507,10 @@ header{
 
 .slider-controls {
 	position: absolute; /* Абсолютное позиционирование */
-    bottom: -50px; /* Отступ от нижнего края слайдера */
-    right: 10px; /* Отступ от правого края слайдера */
+	top: 50%;
+
     display: flex; /* Для размещения кнопок в строку */
-    gap: 10px; /* Расстояние между кнопками */
+    gap: 690px; /* Расстояние между кнопками */
     z-index: 1; /* Убедитесь, что кнопки находятся поверх других элементов */
 
 }
@@ -523,6 +523,7 @@ header{
 	font-size: 24px;
 	padding: 10px;
 	cursor: pointer;
+	border: 0px;
 }
 
 /* Слайдер */

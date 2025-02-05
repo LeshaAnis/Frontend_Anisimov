@@ -75,85 +75,7 @@
             <h1 class="h1_services"> Наши сервисы</h1>
         </div>
         <div id="id_services_section" class="div_services_section">
-            <script>
-                // Объект с данными карточек
-                const cards = {
-                  card1: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },
-                  
-                  card2: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },
-                  card3: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },
-                  card4: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },
-                  card5: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },
-                  card6: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },
-                  card7: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },
-                  card8: {
-                    title: "Фирменный дизайн",
-                    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
-                    imageUrl: "icons/ps_lab.svg"
-                  },    
-                };
-        
-                // Функция для генерации HTML-шаблона карточки
-                function generateCardTemplate(card) {
-                  return `
-                    <div class="services_section">
-                      <img src="${card.imageUrl}" alt="${card.title}" class="services_section_images">
-                      <p class="services_section_upper">${card.title}</p>
-                      <p class="services_section_lower">${card.description}</p>
-                    </div>
 
-                  `;
-                }
-        
-                // Функция для вставки карточек в указанный контейнер
-                function insertCards(containerId) {
-                  const container = document.getElementById(containerId);
-                  
-                  // Очистим контейнер перед добавлением новых карточек
-                  container.innerHTML = '';
-        
-                  // Перебираем объект cards и добавляем карточки в контейнер
-                  for (const key in cards) {
-                    if (cards.hasOwnProperty(key)) {
-                      const cardHTML = generateCardTemplate(cards[key]);
-                      container.innerHTML += cardHTML;
-                    }
-                  }
-                }
-        
-                // Вставляем карточки после загрузки страницы
-                window.onload = function() {
-                  insertCards('id_services_section');
-                };
-            </script>
 
         </div>
         <div id="portfolio" class="div_portfolio">
@@ -305,7 +227,87 @@
         </div>
 
     </footer>
+    <script>
+// Объект с данными карточек
+const cards = {
+  card1: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  },
+  card2: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  },
+  card3: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  },
+  card4: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  },
+  card5: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  },
+  card6: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  },
+  card7: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  },
+  card8: {
+    title: "Фирменный дизайн",
+    description: "Я верю, что ты останешься с миром, и я хочу, чтобы ты был избранным. Ничто не предвещает, что я окажусь в таком положении, как сейчас.",
+    imageUrl: "icons/ps_lab.svg"
+  }
+};
+
+// Функция для генерации HTML-шаблона карточки
+function generateCardTemplate(card) {
+  return `
+    <div class="services_section">
+      <img src="${card.imageUrl}" alt="${card.title}" class="services_section_images">
+      <p class="services_section_upper">${card.title}</p>
+      <p class="services_section_lower">${card.description}</p>
+    </div>
+  `;
+}
+
+// Функция для вставки карточек в указанный контейнер
+function insertCards(containerId) {
+  const container = document.getElementById(containerId);
+
+  // Очистим контейнер перед добавлением новых карточек
+  container.innerHTML = '';
+
+  // Перебираем объект cards и добавляем карточки в контейнер
+  for (const key in cards) {
+    if (cards.hasOwnProperty(key)) {
+      const cardHTML = generateCardTemplate(cards[key]);
+      container.innerHTML += cardHTML;
+    }
+  }
+}
+
+// Вызов функции после загрузки DOM
+document.addEventListener('DOMContentLoaded', function () {
+  insertCards('id_services_section');
+});
+
+        
+    </script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
