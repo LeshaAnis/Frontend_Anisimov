@@ -8,6 +8,13 @@
     <link rel=""type="" href="css/swiper-bundle.min.css">
 </head>
 <body>
+    <div id="preloader" class="preloader">
+        <div class="spinner"></div>
+        <div class="preloader-content">
+            <img src="icons/loading.png" alt="Загрузка..." class="loading-image">
+            <p class="loading-text">Пожалуйста, подождите...</p>
+        </div>
+    </div>
     <header>
         <nav class="nav_header">
             <ul class="ul_upper">
@@ -20,11 +27,27 @@
                 <li><a href="#about" class="li_infopmation">О нас</a></li>
                 <li><a href="#services" class="li_infopmation">IT сервисы<img class="a_img" src="icons/Frame 48096222.svg"></a></li>
                 <li><a href="#portfolio" class="li_infopmation">Портфолио</a></li>
-                <li><a href="#contact_us" class="li_infopmations">Обратная связь</a></li>
+                <li><a href="#" id="openModal" class="li_infopmations">Обратная связь</a></li>
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeModal" class="close" role="button" aria-label="Закрыть модальное окно" tabindex="0">&times;</span>
+                        <form id="modalForm" class="form_modal" >
+                            <input class="input_form_modal" type="text" id="name" placeholder="Имя" required />
+                            <input class="input_form_modal" type="text" id="" placeholder="Электронная почта" readonly/>
+                            <input class="input_form_modal" type="text" id="" placeholder="Телефон (необязательно)" readonly/>
+                            <textarea class="input_form_modals" id="message" rows="4" placeholder="Расскажите нам о проекте, над которым вы работаете *(необязательно)" readonly ></textarea>
+                            <div class="div_modal_form">
+                                <button class="button_form_modal">Отправить</button>
+                                <button class="button_form_modal">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
             </ul>
         </nav>
     </header>
     <main>
+
         <div class="main_div_header">
             <a href="#" class="main_a_header">
                 <h2 class="main_a_h1_header">Преодоление разрыва между идеями и реальностью</h2>
@@ -280,6 +303,7 @@
                 </span>
             </div>
         </div>
+
     </footer>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>

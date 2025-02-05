@@ -8,6 +8,67 @@
 	font-family: Proxima Nova, sans-serif;
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Прелоадер выше всего остального */
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Цвет фона */
+    border-top: 8px solid #3498db; /* Цвет верхней части */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite; /* Анимация вращения */
+}
+
+.preloader-content {
+    text-align: center;
+    margin-top: 20px; /* Отступ от спиннера */
+}
+
+.loading-image {
+    width: 80px; /* Ширина изображения */
+    height: auto;
+    animation: bounce 1.5s infinite; /* Анимация прыжков */
+}
+
+.loading-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    animation: fadeInOut 2s infinite; /* Анимация мигания текста */
+}
+
+/* Анимация вращения спиннера */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Анимация прыжков изображения */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Анимация мигания текста */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+
+
 header{
 	margin-left: 100px;
 }
@@ -45,6 +106,90 @@ header{
 	margin: 5px;
 }
 
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 35%;
+    top: 10%;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: #6eda1b;
+    width: 100%;
+	height: 100%;
+	background-color: rgba(72, 216, 15, 0.4);
+}
+
+.form_modal {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close {
+    cursor: pointer;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	padding: 2px 10px;
+	color: red	;
+	font-size: 28px;
+	transition: color 0.3s;
+	border: 2px solid #090707
+}
+
+.close:hover {
+    color: #f00; /* Изменение цвета при наведении */
+}
+
+.input_form_modal {
+	width: 300px;
+	height: 30px;
+	font-family: Proxima Nova;
+	font-size: 17px;
+	border-radius: 2px;
+	margin: 10px 0px;
+	opacity: 0.4px;
+	border: 1px solid #FFFFFF
+}
+
+.input_form_modals {
+	width: 300px;
+	height: 90px;
+	font-family: Proxima Nova;
+	font-size: 17px;
+	border-radius: 2px;
+	margin: 10px 0px;
+	opacity: 0.4px;
+	border: 1px solid #FFFFFF
+}
+
+.div_modal_form {
+	display: flex;
+}
+
+.button_form_modal {
+	width: 100px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+	margin: 10px;
+	font-family: 'Proxima Nova';
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #E92129;
+	border: 1px solid #FFFFFF
+}	
+
 @font-face {
 	font-family: 'Proxima Nova';
 	font-style: normal;
@@ -78,7 +223,6 @@ header{
 	font-size: 14px;
 	color: #ffffff;
 	background-color: #E92129;
-	;
 }
 
 .main_div_header {
