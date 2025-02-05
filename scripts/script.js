@@ -1,20 +1,20 @@
-// Инициализация Swiper
-const swiper = new Swiper('.swiper-slider', {
-  direction: 'horizontal', // Горизонтальное направление
-  loop: true, // Зацикливание слайдов
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.swiper-slider', {
+      direction: 'horizontal', // Горизонтальное направление
+      loop: true, // Зацикливание слайдов
+      slidesPerView: 1, // Показывать только один слайд
+      spaceBetween: 0, // Без промежутков между слайдами
 
-  slidesPerView: 1, // Показывать только один слайд
-  spaceBetween: 0, // Без промежутков между слайдами
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
 
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-
-  navigation: {
-      nextEl: '.next',
-      prevEl: '.prev',
-  },
+      navigation: {
+          nextEl: '.next',
+          prevEl: '.prev',
+      },
+  });
 });
 
 // Обработчики событий для кнопок навигации
