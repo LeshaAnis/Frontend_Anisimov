@@ -290,7 +290,8 @@ header{
     width: 800px;
 	height: 400px;
     overflow: hidden;
-	margin: 100px 0px;
+
+	
 }
 
 .swiper-wrapper {
@@ -305,6 +306,18 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+
+	position: relative;
+}
+
+.swiper-slide img {
+	width: 100%; /* Изображение занимает всю ширину слайда */
+	height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.swiper-slide-next {
+	transform: scale(0.90); /* Уменьшение размера следующего слайда */
 }
 
 .img_swipper {
