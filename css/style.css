@@ -354,8 +354,8 @@ header{
 }
 
 .services_section {
-	width: 277px;
-	height: 231px;
+	width: 400px;
+	height: 450px;
 	padding: 16px 0px 0px 0px;
 	margin: 20px;
 	background-color: #ffffff;
@@ -364,6 +364,8 @@ header{
 }
 
 .services_section_images {
+	width: 200px;
+	height: 200px;
 	display: flex;
 	justify-content: center;
 	margin: auto;
