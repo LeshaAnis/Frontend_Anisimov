@@ -327,7 +327,7 @@ header{
 .div_services {
 	background: linear-gradient(12.79deg,#E92129 15.17%, #242424 50.25%);
 	width: 100%;
-	height: 320px;
+	height: 1020px;
 
 
 }
@@ -349,7 +349,7 @@ header{
 	display: flex;
 	flex-wrap: wrap;
     justify-content: space-evenly;
-	margin-top: -125px;
+	margin-top: -825px;
 	margin-bottom: 100px;
 }
 
@@ -360,7 +360,8 @@ header{
 	margin: 20px;
 	background-color: #ffffff;
 	border: 1px solid #FFFFFF;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 15px; 
 }
 
 .services_section_images {
@@ -370,11 +371,15 @@ header{
 	justify-content: center;
 	margin: auto;
 	margin-bottom: 30px;
+	border-radius: 10px;
 }
 
 .services_section_upper {
 	display: flex;
 	justify-content: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: #E4252C;
 }
 
 .services_section_lower {
@@ -426,6 +431,7 @@ header{
 	font-weight: 700;
 	line-height: 22.13px;
 	color:#ffffff;
+	border: none;
 }
 
 /* Слайдер */
@@ -540,7 +546,7 @@ header{
 
 .contact_us_communis {
 	display: flex;
-	background: linear-gradient(120.79deg, #242424 13.25%, #E92129 75.17%);
+	background: linear-gradient(90.79deg, #242424 65.31%, #E92129 98.69%);
 }
 
 .contact_us_supremus {
@@ -622,6 +628,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: none;
 }
 
 .div_banner_images {
@@ -753,9 +760,9 @@ header{
 
 .input-container {
     position: relative; /* Устанавливаем относительное позиционирование для контейнера */
-    width: 100%; /* Задаем ширину контейнера */
+
 	width: 640px;
-	height: 60px;
+	height: 20px;
 	padding: 8.x 8px 8px 18px;
 
 	border-radius: 5px 0px 0px 0px;
@@ -767,22 +774,23 @@ header{
     padding-right: 80px; /* Добавляем отступ справа для кнопки */
 	border: none;
 	background-color: #272727;
-	border-radius: 5px;
+	border-radius: 10px;
+	height:20px;
 
 }
 
 .button_tertium_gradum_inferior {
     position: absolute; /* Абсолютное позиционирование для кнопки */
-    right: 52px; /* Располагаем кнопку справа внутри поля ввода */
-    top: 50%; /* Центрируем кнопку по вертикали */
-    transform: translateY(-100%); /* Корректируем вертикальное выравнивание кнопки */
-    padding: 5px 10px; /* Отступы внутри кнопки */
+    right: 40px; /* Располагаем кнопку справа внутри поля ввода */
+    top: 15%; /* Центрируем кнопку по вертикали */
+
+    padding: 0px 0px; /* Отступы внутри кнопки */
 	background-color: #E92129;
     color:white; /* Цвет текста кнопки */
     border: none; /* Убираем рамку у кнопки */
-    border-radius: 4px; /* Закругленные углы кнопки */
+    border-radius: 10px; /* Закругленные углы кнопки */
 	width: 101px;
-	height: 44ppx;
+	height: 34px;
 
 	
 }
