@@ -437,15 +437,21 @@ header{
 /* Слайдер */
 
 .swiper-slider {
+<<<<<<< HEAD
 	display: flex;
     position: relative;
     width: 800px;
 	height: 400px;
+=======
+    position: relative;
+    width: 800px;
+>>>>>>> 27442650c11bdf3cbf415228a8e16e6bd9ae7631
     overflow: hidden;
 
 	
 }
 
+<<<<<<< HEAD
 .swiper-wrapper {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
@@ -466,6 +472,26 @@ header{
 .swiper-slide img {
 	width: 100%; /* Изображение занимает всю ширину слайда */
 	height: auto; /* Автоматическая высота для сохранения пропорций */
+=======
+.wrapper-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+
+.img_swipper {
+    width:800px;
+	margin: 50px;
+    border-radius: 10px;
+>>>>>>> 27442650c11bdf3cbf415228a8e16e6bd9ae7631
 }
 
 .swiper-slide-next {
@@ -523,6 +549,7 @@ header{
 
 }
 
+<<<<<<< HEAD
 .prev,
 .next {
 	background-color: red;
@@ -534,6 +561,40 @@ header{
 	border: 0px;
 }
 
+=======
+.prev {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.next {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover {
+    background-color: darkred;
+}
+
+.next:hover {
+    background-color: darkred;
+}
+
+>>>>>>> 27442650c11bdf3cbf415228a8e16e6bd9ae7631
 /* Слайдер */
 .div_banner_img {
 	background-color: #000000;
