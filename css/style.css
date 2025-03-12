@@ -225,6 +225,10 @@ header{
 	background-color: #E92129;
 }
 
+.conteiner {
+
+}
+
 .main_div_header {
 	margin: 100px;
 }
@@ -437,42 +441,13 @@ header{
 /* Слайдер */
 
 .swiper-slider {
-<<<<<<< HEAD
-	display: flex;
     position: relative;
     width: 800px;
-	height: 400px;
-=======
-    position: relative;
-    width: 800px;
->>>>>>> 27442650c11bdf3cbf415228a8e16e6bd9ae7631
     overflow: hidden;
 
 	
 }
 
-<<<<<<< HEAD
-.swiper-wrapper {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-	will-change: transform;
-}
-
-.swiper-slide {
-	flex-shrink: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-
-	position: relative;
-}
-
-.swiper-slide img {
-	width: 100%; /* Изображение занимает всю ширину слайда */
-	height: auto; /* Автоматическая высота для сохранения пропорций */
-=======
 .wrapper-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -491,7 +466,6 @@ header{
     width:800px;
 	margin: 50px;
     border-radius: 10px;
->>>>>>> 27442650c11bdf3cbf415228a8e16e6bd9ae7631
 }
 
 .swiper-slide-next {
@@ -549,19 +523,6 @@ header{
 
 }
 
-<<<<<<< HEAD
-.prev,
-.next {
-	background-color: red;
-	border-radius: 50%;
-	color: white;
-	font-size: 24px;
-	padding: 10px;
-	cursor: pointer;
-	border: 0px;
-}
-
-=======
 .prev {
     background-color: red;
     border: none;
@@ -594,7 +555,6 @@ header{
     background-color: darkred;
 }
 
->>>>>>> 27442650c11bdf3cbf415228a8e16e6bd9ae7631
 /* Слайдер */
 .div_banner_img {
 	background-color: #000000;
