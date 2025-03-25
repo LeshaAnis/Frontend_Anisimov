@@ -1,0 +1,9 @@
+.div_avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.li_img {
+	margin: 5px;
+}

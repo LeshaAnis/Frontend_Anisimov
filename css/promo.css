@@ -1,0 +1,20 @@
+.main_div_header {
+	margin: 100px;
+}
+
+.main_a_header {
+	display: flex;
+	
+}
+
+.main_a_h1_header {
+	display: flex;
+	align-items: center;
+	margin-right: 40px;
+    font-size: 80px; /* Размер текста */
+    font-weight: 800; /* Жирный шрифт */
+    background: linear-gradient(120.79deg, #242424 3.25%, #E92129 75.17%);
+    -webkit-background-clip: text; /* Обрезка фона по контуру текста (для WebKit-браузеров) */
+    -webkit-text-fill-color: transparent; /* Прозрачный цвет текста (для WebKit-браузеров) */	
+    
+}

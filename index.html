@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NiXXCOL</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel=""type="" href="css/swiper-bundle.min.css">
 </head>
@@ -15,7 +16,7 @@
             <p class="loading-text">Пожалуйста, подождите...</p>
         </div>
     </div>
-    <header>
+    <header class="header" >
         <nav class="nav_header">
             <ul class="ul_upper">
                 <div class="div_avatar">
@@ -47,7 +48,6 @@
         </nav>
     </header>
     <main>
-
         <div class="main_div_header">
             <a href="#" class="main_a_header">
                 <h2 class="main_a_h1_header">Преодоление разрыва между идеями и реальностью</h2>
@@ -75,8 +75,6 @@
             <h1 class="h1_services"> Наши сервисы</h1>
         </div>
         <div id="id_services_section" class="div_services_section">
-
-
         </div>
         <div id="portfolio" class="div_portfolio">
             <div class="div_portfolio_supremus">
@@ -120,19 +118,13 @@
               <div class="swiper-pagination"></div>
         
               <!-- Кнопки навигации -->
-<div class="slider-controls">
-              <button class="prev">&lt;</button>
-              <button class="next">&gt;</button>
-            </div>
+              <div class="slider-controls">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+              </div>
             </div>
 
-      </div>
-            
-            
-
-        
-    
-        
+        </div>
         <div class="div_banner_img">
             <span class="span_banner_img">
                 <img class="banner_img" src="icons/image 8.png">
@@ -142,7 +134,6 @@
                 <img class="banner_img" src="icons/image 12.png">
             </span>    
         </div>
-       
         <div id="portfolio" class="div_portfolio">
             <div class="div_portfolio_supremus">
                 <span class="span_portfolio_supremus">
@@ -153,7 +144,6 @@
             </div>
             <div class="div_portfolio_medius">
                 <img src="images/Frame 48096192.png">
-                
             </div>
             <div class="div_portfolio_inferior">
                 <img src="images/Frame 1000000912.png">
@@ -205,7 +195,6 @@
                         <img class="img_tertium_gradum_supremus" src="icons/Vector_5.svg" alt="">
                         <p class="p_tertium_gradum_supremus" >Я прошу прощения за то, что сижу на консилиуме. Я либеро, лектор, судья Маттис А.</p>
                     </span>
-
                 </div>
                 <div class="div_tertium_gradum_inferior">
                     <span class="span_ul_tertium_gradum_supremus">
@@ -214,9 +203,7 @@
                             <li><a href="#services" class="li_tertium_gradum_inferior">Помощь в IT</a></li>
                             <li><a href="#portfolio" class="li_tertium_gradum_inferior">Портфолио</a></li>
                             <li><a href="#contact_us" class="li_tertium_gradum_inferior">Обратная связь</a></li>
-                        </ul> 
-
-                        
+                        </ul>  
                     </span>
                     <span class="span_tertium_gradum_inferior">
                         <form class="form_tertium_gradum_inferior" action="">
@@ -284,7 +271,6 @@ const cards = {
     imageUrl: "images/cs_2_1.jpg"
   }
 };
-
 // Функция для генерации HTML-шаблона карточки
 function generateCardTemplate(card) {
   return `
@@ -295,14 +281,11 @@ function generateCardTemplate(card) {
     </div>
   `;
 }
-
 // Функция для вставки карточек в указанный контейнер
 function insertCards(containerId) {
   const container = document.getElementById(containerId);
-
   // Очистим контейнер перед добавлением новых карточек
   container.innerHTML = '';
-
   // Перебираем объект cards и добавляем карточки в контейнер
   for (const key in cards) {
     if (cards.hasOwnProperty(key)) {
@@ -311,13 +294,10 @@ function insertCards(containerId) {
     }
   }
 }
-
 // Вызов функции после загрузки DOM
 document.addEventListener('DOMContentLoaded', function () {
   insertCards('id_services_section');
 });
-
-        
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>

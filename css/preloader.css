@@ -1,0 +1,58 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Прелоадер выше всего остального */
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Цвет фона */
+    border-top: 8px solid #3498db; /* Цвет верхней части */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite; /* Анимация вращения */
+}
+
+.preloader-content {
+    text-align: center;
+    margin-top: 20px; /* Отступ от спиннера */
+}
+
+.loading-image {
+    width: 80px; /* Ширина изображения */
+    height: auto;
+    animation: bounce 1.5s infinite; /* Анимация прыжков */
+}
+
+.loading-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    animation: fadeInOut 2s infinite; /* Анимация мигания текста */
+}
+
+/* Анимация вращения спиннера */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Анимация прыжков изображения */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Анимация мигания текста */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}

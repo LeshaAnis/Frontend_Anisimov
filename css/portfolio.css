@@ -1,0 +1,42 @@
+.div_portfolio {
+	display: flex;
+	margin: 150px 0px;
+}
+
+.div_portfolio_supremus {
+	display: flex;
+	align-items: center;
+	margin-left: 100px;
+}
+
+.h1_portfolio_supremus {
+	font-family: Proxima Nova;
+    font-size: 80px;
+    font-weight: 800;
+	color: #242424;
+}
+
+.images_portfolio_medius {
+	padding: auto;
+}
+
+.p_portfolio_supremus {
+	font-family: Proxima Nova;
+	font-size: 18.51px;
+	font-weight: 400;
+	color: #1C1C1C;
+
+}
+
+.button_portfolio_supremus {
+	width: 186px;
+	height: 52px;
+	border-radius: 12px;
+	background-color: #E92129;
+	font-family: Proxima Nova;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22.13px;
+	color:#ffffff;
+	border: none;
+}

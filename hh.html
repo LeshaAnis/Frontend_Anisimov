@@ -1,87 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swiper Test</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <style>
-    .swiper-slider {
-      width: 800px;
-      height: 400px;
-      margin: 50px auto;
-      position: relative;
-    }
-
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #ccc;
-      font-size: 24px;
-      color: #333;
-    }
-
-    .slider-controls {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      z-index: 10;
-    }
-
-    .prev,
-    .next {
-      background-color: red;
-      border: none;
-      color: white;
-      font-size: 24px;
-      padding: 10px 15px;
-      cursor: pointer;
-      border-radius: 50%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiXXCOL</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel=""type="" href="css/swiper-bundle.min.css">
 </head>
-<body>
-  <div class="swiper-slider">
-    <div class="wrapper-slider">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
+<body class="conteiner">
+    <div id="preloader" class="preloader">
+        <div class="spinner"></div>
+        <div class="preloader-content">
+            <img src="icons/loading.png" alt="Загрузка..." class="loading-image">
+            <p class="loading-text">Пожалуйста, подождите...</p>
+        </div>
     </div>
+    <header>
+        <nav class="nav_header">
+            <ul class="ul_upper">
+                <div class="div_avatar">
+                <li><a href="index.html" class="li_img"><img class="" src="icons/Vector.svg"></a></li>
+                <li><a href="index.html"><img class="" src="icons/Nixxsol.png"></a></li>
+                </div>
+            </ul>
+            <ul class="ul_lower">
+                <li><a href="#about" class="li_infopmation">О нас</a></li>
+                <li><a href="#services" class="li_infopmation">IT сервисы<img class="a_img" src="icons/Frame 48096222.svg"></a></li>
+                <li><a href="#portfolio" class="li_infopmation">Портфолио</a></li>
+                <li><a href="#" id="openModal" class="li_infopmations">Обратная связь</a></li>
 
-    <div class="swiper-pagination"></div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeModal" class="close" role="button" aria-label="Закрыть модальное окно" tabindex="0">&times;</span>
+                        <form id="modalForm" class="form_modal" >
+                            <input class="input_form_modal" type="text" id="name" placeholder="Имя" required />
+                            <input class="input_form_modal" type="text" id="" placeholder="Электронная почта" readonly/>
+                            <input class="input_form_modal" type="text" id="" placeholder="Телефон (необязательно)" readonly/>
+                            <textarea class="input_form_modals" id="message" rows="4" placeholder="Расскажите нам о проекте, над которым вы работаете *(необязательно)" readonly ></textarea>
+                            <div class="div_modal_form">
+                                <button class="button_form_modal">Отправить</button>
+                                <button class="button_form_modal">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main_div_header">
+            <a href="#" class="main_a_header">
+                <h2 class="main_a_h1_header">Преодоление разрыва между идеями и реальностью</h2>
+                <img class="" src="images/Main_img.png">
+            </a>
+        </div>
+        <div id="about" class="div_about_information">
+            <div class="div_h1_information">
+                <h1>О нас</h1>
+            </div>
+            <div class="div_p_information">
+                <p class="p_upper_information">Лорем ипсум - основная команда. Советы по переодеванию в соответствии с жизнью</p>
+                <p class="p_lower_information">Маттис или что-то в этом роде, Маттис - мой лучший друг среди венерианцев. Священное писание - это изречение мудреца, которое говорит само за себя. В орнаре или Лео одио магна</p>
+                <div class="div_ctatic_information">
+                    <p class="p_information_block">100<span style="color: #E4252C;">+</span><br><span class="span_information_block">счастливых клиентов</span></p>
+                    <p class="p_information_block">05<span style="color: #E4252C;">+</span><br><span class="span_information_block"> лет в бизнесе</span></p>
+                    <p class="p_information_block">50<span style="color: #E4252C;">+</span><br><span class="span_information_block"> общее количество участников</span></p>
+                </div> 
+            </div>
+        </div>
+        <div id="services" class="div_services">
+            <h1 class="h1_services"> Наши сервисы</h1>
+        </div>
+        <div id="id_services_section" class="div_services_section">
 
-    <div class="slider-controls">
-      <button class="prev"><</button>
-      <button class="next">></button>
-    </div>
-  </div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const swiper = new Swiper('.swiper-slider', {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 0,
+        </div>
+        <div id="portfolio" class="div_portfolio">
+            <div class="div_portfolio_supremus">
+                <span class="span_portfolio_supremus">
+                    <h1 class="h1_portfolio_supremus">Портфолио</h1>
+                    <p class="p_portfolio_supremus">Мы должны знать, что такое долг, и знать, что такое закон. В сущности, это важнейший элемент управления.</p>
+                    <button class="button_portfolio_supremus">Больше портфолио ></button>
+                </span>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img  class="img_swipper" src="images/Rectangle 1394.png" alt="Slide 1" />
+                  <div class="games-banner">
+                    <div class="text-content">
+                      <h2>Games</h2>
+                      <a href="#" class="see-all">Больше игр →</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img  class="img_swipper" src="images/photo_2024-12-18_17-28-58.jpg" alt="Slide 2" />
+                  <div class="games-banner">
+                    <div class="text-content">
+                      <h2>Games</h2>
+                      <a href="#" class="see-all">Больше игр →</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img  class="img_swipper" src="images/Rectangle 1394.png" alt="Slide 3" />
+                  <div class="games-banner">
+                    <div class="text-content">
+                      <h2>Games</h2>
+                      <a href="#" class="see-all">Больше игр →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Пагинация -->
+              <div class="swiper-pagination"></div>
+        
+              <!-- Кнопки навигации -->
+              <div class="slider-controls">
+                 <button class="prev">&lt;</button>
+                 <button class="next">&gt;</button>
+            </div>
+            </div>
+        </div>
+             
+        <div class="div_banner_img">
+            <span class="span_banner_img">
+                <img class="banner_img" src="icons/image 8.png">
+                <img class="banner_img" src="icons/image 9.png">
+                <img class="banner_img" src="icons/image 10.png">
+                <img class="banner_img" src="icons/image 11.png">
+                <img class="banner_img" src="icons/image 12.png">
+            </span>    
+        </div>
+       
+        <div id="portfolio" class="div_portfolio">
+            <div class="div_portfolio_supremus">
+                <span class="span_portfolio_supremus">
+                    <h1 class="h1_portfolio_supremus">Рекомендации</h1>
+                    <p class="p_portfolio_supremus">Мы должны знать, что такое долг, и знать, что такое закон. В сущности, это важнейший элемент управления.</p>
+                    <button class="button_portfolio_supremus">Исследуйте больше</button>
+                </span>
+            </div>
+            <div class="div_portfolio_medius">
+                <img src="images/Frame 48096192.png">
+                
+            </div>
+            <div class="div_portfolio_inferior">
+                <img src="images/Frame 1000000912.png">
+            </div>    
+        </div>
+        <div id="contact_us" class="contact_us_communis">
+            <div class="contact_us_supremus">
+                <p class="p_recomendation_supremus" >Рекомендации _______</p>
+                <h1 class="h1_recomendation" >Запишитесь на встречу с нами</h1>
+                <p class="p_recomendation_inferion">Маттис, возможно, не знает, что происходит, Маттис - мой лучший друг среди венерианцев. Земное правило, изречение великого мудреца Европейского союза. В действительности, это великий Лев.</p>
+            </div>
+            <div class="contact_us_inferior">
+                <form class="form_contact_us_inferior">
+                    <input class="input_contact_us_inferior" type="text" id="name" placeholder="Имя" required />
+                    <input class="input_contact_us_inferior" type="text" id="" placeholder="Электронная почта" readonly/>
+                    <input class="input_contact_us_inferior" type="text" id="" placeholder="Телефон (необязательно)" readonly/>
+                    <input class="input_contact_us_inferiors" type="text" id="" placeholder="Расскажите нам о проекте, над которым вы работаете *(необязательно)" readonly/>
+                    <button class="button_contact_us_inferior">Отправить</button>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="div_banner_images">
+            <span class="span_banner_images">
+                <img src="icons/Frame 48096173.png" alt="">
+                <img src="icons/Frame 48096174.png" alt="">
+                <img src="icons/Frame 48096175.png" alt="">
+                <img src="icons/Frame 48096176.png" alt="">
+                <img src="icons/Frame 48096177.png" alt="">
+            </span>
+        </div>
+        <div class="div_banner_class_images">
+            <img class="" src="icons/Component 3.svg">   
+        </div>
+    </main>
+    <footer >
+        <div class="div_primo_gradu">
+            <div class="div_secundum_gradum_supremus">
+                <div class="div_tertium_gradum_supremus">
+                    <span class="span_tertium_gradum_supremus">
+                        <img class="img_tertium_gradum_supremus" src="icons/Vector_.svg" alt="">
+                        <p class="p_tertium_gradum_supremus" >+92 300 1234567</p>
+                    </span>
+                    <span class="span_tertium_gradum_supremus" >
+                        <img class="img_tertium_gradum_supremus" src="icons/Vector_6.svg" alt="">
+                        <p class="p_tertium_gradum_supremus" >info@nixxsol.com</p>
+                    </span>
+                    <span class="span_tertium_gradum_supremus" >
+                        <img class="img_tertium_gradum_supremus" src="icons/Vector_5.svg" alt="">
+                        <p class="p_tertium_gradum_supremus" >Я прошу прощения за то, что сижу на консилиуме. Я либеро, лектор, судья Маттис А.</p>
+                    </span>
 
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
+                </div>
+                <div class="div_tertium_gradum_inferior">
+                    <span class="span_ul_tertium_gradum_supremus">
+                        <ul class="ul_tertium_gradum_inferior">
+                            <li><a href="#about" class="li_tertium_gradum_inferior">О нас</a></li>
+                            <li><a href="#services" class="li_tertium_gradum_inferior">Помощь в IT</a></li>
+                            <li><a href="#portfolio" class="li_tertium_gradum_inferior">Портфолио</a></li>
+                            <li><a href="#contact_us" class="li_tertium_gradum_inferior">Обратная связь</a></li>
+                        </ul> 
 
-        navigation: {
-          nextEl: '.next',
-          prevEl: '.prev',
-        },
-      });
+                        
+                    </span>
+                    <span class="span_tertium_gradum_inferior">
+                        <form class="form_tertium_gradum_inferior" action="">
+                            <label for="email" class="form-label">Оставайтесь на связи</label>
+                            <div class="input-container">
+                                <input id="email" class="input_tertium_gradum_inferior" type="email" placeholder="Адрес электронной почты" readonly />
+                                <button type="button" class="button_tertium_gradum_inferior">Отправить</button>
+                            </div>
+                        </form>
+                    </span>
+                </div>
+            </div>
+            <div class="div_secundum_gradum_inferior">
+                <p class="p_secundum_gradum_inferior"> &copy;  2022 Nixsol <i><b> Все права защищены. </b></i></p>
+                <span class="span_secundum_gradum_inferior">
+                    <img class="img_secundum_gradum_inferior" src="icons/Vector_2.svg" alt="">
+                    <img class="img_secundum_gradum_inferior" src="icons/Vector_3.svg" alt="">
+                    <img class="img_secundum_gradum_inferior" src="icons/Vector_4.svg" alt="">
+                </span>
+            </div>
+        </div>
 
-      console.log('Swiper инициализирован:', swiper);
-    });
-  </script>
+    </footer>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

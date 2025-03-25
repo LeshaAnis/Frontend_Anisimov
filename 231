@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiXXCOL</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel=""type="" href="css/swiper-bundle.min.css">
+</head>
+<body class="page">
+    <div id="preloader" class="preloader">
+        <div class="preloader__spinner"></div>
+        <div class="preloader__content">
+            <img src="icons/loading.png" alt="Загрузка..." class="preloader__image">
+            <p class="preloader__text">Пожалуйста, подождите...</p>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list nav__list--upper">
+                <div class="nav__avatar">
+                    <li><a href="index.html" class="nav__item"><img class="nav__icon" src="icons/Vector.svg"></a></li>
+                    <li><a href="index.html"><img class="nav__logo" src="icons/Nixxsol.png"></a></li>
+                </div>
+            </ul>
+            <ul class="nav__list nav__list--lower">
+                <li><a href="#about" class="nav__item">О нас</a></li>
+                <li><a href="#services" class="nav__item">IT сервисы<img class="nav__icon" src="icons/Frame 48096222.svg"></a></li>
+                <li><a href="#portfolio" class="nav__item">Портфолио</a></li>
+                <li><a href="#" id="openModal" class="nav__item nav__item--feedback">Обратная связь</a></li>
+                <div id="modal" class="modal">
+                    <div class="modal__content">
+                        <span id="closeModal" class="modal__close" role="button" aria-label="Закрыть модальное окно" tabindex="0">&times;</span>
+                        <form id="modalForm" class="form form--modal">
+                            <input class="form__input" type="text" id="name" placeholder="Имя" required />
+                            <input class="form__input" type="text" id="" placeholder="Электронная почта" readonly/>
+                            <input class="form__input" type="text" id="" placeholder="Телефон (необязательно)" readonly/>
+                            <textarea class="form__textarea" id="message" rows="4" placeholder="Расскажите нам о проекте, над которым вы работаете *(необязательно)" readonly ></textarea>
+                            <div class="form__buttons">
+                                <button class="form__button form__button--submit">Отправить</button>
+                                <button class="form__button form__button--cancel">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <a href="#" class="hero__link">
+                <h2 class="hero__title">Преодоление разрыва между идеями и реальностью</h2>
+                <img class="hero__image" src="images/Main_img.png">
+            </a>
+        </div>
+        <div id="about" class="about">
+            <div class="about__header">
+                <h1 class="about__title">О нас</h1>
+            </div>
+            <div class="about__content">
+                <p class="about__text about__text--upper">Лорем ипсум - основная команда. Советы по переодеванию в соответствии с жизнью</p>
+                <p class="about__text about__text--lower">Маттис или что-то в этом роде, Маттис - мой лучший друг среди венерианцев. Священное писание - это изречение мудреца, которое говорит само за себя. В орнаре или Лео одио магна</p>
+                <div class="about__stats">
+                    <p class="about__stat">100<span style="color: #E4252C;">+</span><br><span class="about__stat-label">счастливых клиентов</span></p>
+                    <p class="about__stat">05<span style="color: #E4252C;">+</span><br><span class="about__stat-label"> лет в бизнесе</span></p>
+                    <p class="about__stat">50<span style="color: #E4252C;">+</span><br><span class="about__stat-label"> общее количество участников</span></p>
+                </div> 
+            </div>
+        </div>
+        <div id="services" class="services">
+            <h1 class="services__title">Наши сервисы</h1>
+        </div>
+        <div id="id_services_section" class="services-section">
+            <script>
+// Объект с данными карточек
+const cards = {
+  card1: {
+    title: "Мир Танков",
+    description: "Многопользовательская онлайн-игра, в которой игроки управляют танками и сражаются друг с другом на различных картах. Игра предлагает широкий выбор моделей танков из разных стран, а также различные игровые режимы. Основное внимание уделяется командной работе и стратегии, что делает каждую битву уникальной.",
+    imageUrl: "images/mir_tankov_1.jpg"
+  },
+  card2: {
+    title: "Escape from Tarkov",
+    description: "Реалистичный шутер от первого лица с элементами RPG и выживания. Игроки попадают в вымышленный российский город, охваченный конфликтом, и должны выполнять задания, собирать ресурсы и выживать в условиях жестокой борьбы с другими игроками и NPC. Игра отличается высокой сложностью и глубоким погружением в атмосферу.",
+    imageUrl: "images/tarkov_1.jpg"
+  },
+  card3: {
+    title: "Call of Duty: Warzone",
+    description: "Бесплатная королевская битва, в которой игроки сражаются на огромной карте в команде или в одиночку. Игра включает в себя элементы тактики, стрельбы и стратегии, а также различные режимы, такие как «победа до последнего» и «выживание». Warzone известна динамичным игровым процессом и разнообразием оружия.",
+    imageUrl: "images/warzone_2.jpg"
+  },
+  card4: {
+    title: "Grand Theft Auto V",
+    description: "Экшн-игра с открытым миром, в которой игроки могут исследовать вымышленный город Лос-Сантос. Игра предлагает множество миссий, включая ограбления, гонки и другие действия. Также доступен многопользовательский режим GTA Online, в котором игроки могут взаимодействовать друг с другом в различных активностях.с.",
+    imageUrl: "images/Gta_5_1.jpg"
+  },
+  card5: {
+    title: "PUBG",
+    description: "Одна из первых игр в жанре королевской битвы, в которой до 100 игроков высаживаются на остров и сражаются за выживание. Игроки собирают оружие, броню и ресурсы, чтобы стать последним выжившим. Игра предлагает реалистичную графику и тактический геймплей.",
+    imageUrl: "images/pubg_1.jpg"
+  },
+  card6: {
+    title: "Overwatch",
+    description: "Overwatch — многопользовательская компьютерная игра в жанре геройского шутера от первого лица, разработанная компанией Blizzard Entertainment.",
+    imageUrl: "images/overwatch.jpg"
+  },
+  card7: {
+    title: "Dota 2",
+    description: "Многопользовательская онлайн-игра в жанре MOBA (многопользовательская онлайн-боевая арена). Две команды по пять игроков сражаются друг с другом, управляя уникальными героями с различными способностями. Цель игры — разрушить трон противника, используя стратегию и командное взаимодействие.",
+    imageUrl: "images/dota_2_1.jpg"
+  },
+  card8: {
+    title: "Counter-Strike 2",
+    description: "Обновленная версия популярной серии шутеров от первого лица. Игра сосредоточена на командных боях между террористами и контртеррористами. CS2 предлагает улучшенную графику, нов",
+    imageUrl: "images/cs_2_1.jpg"
+  }
+};
+// Функция для генерации HTML-шаблона карточки
+function generateCardTemplate(card) {
+  return `
+    <div class="services_section">
+      <img src="${card.imageUrl}" alt="${card.title}" class="services_section_images">
+      <p class="services_section_upper">${card.title}</p>
+      <p class="services_section_lower">${card.description}</p>
+    </div>
+  `;
+}
+// Функция для вставки карточек в указанный контейнер
+function insertCards(containerId) {
+  const container = document.getElementById(containerId);
+  // Очистим контейнер перед добавлением новых карточек
+  container.innerHTML = '';
+  // Перебираем объект cards и добавляем карточки в контейнер
+  for (const key in cards) {
+    if (cards.hasOwnProperty(key)) {
+      const cardHTML = generateCardTemplate(cards[key]);
+      container.innerHTML += cardHTML;
+    }
+  }
+}
+// Вызов функции после загрузки DOM
+document.addEventListener('DOMContentLoaded', function () {
+  insertCards('id_services_section');
+});
+    </script>
+        </div>
+        <div id="portfolio" class="portfolio">
+            <div class="portfolio__header">
+                <span class="portfolio__info">
+                    <h1 class="portfolio__title">Портфолио</h1>
+                    <p class="portfolio__description">Мы должны знать, что такое долг, и знать, что такое закон. В сущности, это важнейший элемент управления.</p>
+                    <button class="portfolio__button">Больше портфолио ></button>
+                </span>
+            </div>
+            <div class="swiper">
+              <div class="swiper__wrapper">
+                <div class="swiper__slide">
+                  <img  class="swiper__image" src="images/Rectangle 1394.png" alt="Slide 1" />
+                  <div class="swiper__banner">
+                    <div class="swiper__text-content">
+                      <h2 class="swiper__title">Games</h2>
+                      <a href="#" class="swiper__link">Больше игр →</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Повторяющиеся слайды -->
+              </div>
+              <!-- Пагинация -->
+              <div class="swiper__pagination"></div>
+              <!-- Кнопки навигации -->
+              <div class="swiper__controls">
+                 <button class="swiper__button swiper__button--prev"><</button>
+                 <button class="swiper__button swiper__button--next">></button>
+            </div>
+            </div>
+        </div>
+        <div class="banner">
+            <span class="banner__container">
+                <img class="banner__image" src="icons/image 8.png">
+                <img class="banner__image" src="icons/image 9.png">
+                <img class="banner__image" src="icons/image 10.png">
+                <img class="banner__image" src="icons/image 11.png">
+                <img class="banner__image" src="icons/image 12.png">
+            </span>    
+        </div>
+        <div id="portfolio" class="recommendations">
+            <div class="recommendations__header">
+                <span class="recommendations__info">
+                    <h1 class="recommendations__title">Рекомендации</h1>
+                    <p class="recommendations__description">Мы должны знать, что такое долг, и знать, что такое закон. В сущности, это важнейший элемент управления.</p>
+                    <button class="recommendations__button">Исследуйте больше</button>
+                </span>
+            </div>
+            <div class="recommendations__content recommendations__content--medium">
+                <img class="recommendations__image" src="images/Frame 48096192.png">
+            </div>
+            <div class="recommendations__content recommendations__content--low">
+                <img class="recommendations__image" src="images/Frame 1000000912.png">
+            </div>    
+        </div>
+        <div id="contact_us" class="contact">
+            <div class="contact__header">
+                <p class="contact__label">Рекомендации _______</p>
+                <h1 class="contact__title">Запишитесь на встречу с нами</h1>
+                <p class="contact__description">Маттис, возможно, не знает, что происходит, Маттис - мой лучший друг среди венерианцев. Земное правило, изречение великого мудреца Европейского союза. В действительности, это великий Лев.</p>
+            </div>
+            <div class="contact__form-wrapper">
+                <form class="form form--contact">
+                    <input class="form__input" type="text" id="name" placeholder="Имя" required />
+                    <input class="form__input" type="text" id="" placeholder="Электронная почта" readonly/>
+                    <input class="form__input" type="text" id="" placeholder="Телефон (необязательно)" readonly/>
+                    <input class="form__textarea" type="text" id="" placeholder="Расскажите нам о проекте, над которым вы работаете *(необязательно)" readonly/>
+                    <button class="form__button form__button--submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="partners">
+            <span class="partners__container">
+                <img class="partners__image" src="icons/Frame 48096173.png" alt="">
+                <img class="partners__image" src="icons/Frame 48096174.png" alt="">
+                <img class="partners__image" src="icons/Frame 48096175.png" alt="">
+                <img class="partners__image" src="icons/Frame 48096176.png" alt="">
+                <img class="partners__image" src="icons/Frame 48096177.png" alt="">
+            </span>
+        </div>
+        <div class="footer-banner">
+            <img class="footer-banner__image" src="icons/Component 3.svg">   
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section footer__section--top">
+                <div class="footer__contacts">
+                    <span class="footer__contact">
+                        <img class="footer__icon" src="icons/Vector_.svg" alt="">
+                        <p class="footer__text">+92 300 1234567</p>
+                    </span>
+                    <span class="footer__contact">
+                        <img class="footer__icon" src="icons/Vector_6.svg" alt="">
+                        <p class="footer__text">info@nixxsol.com</p>
+                    </span>
+                    <span class="footer__contact">
+                        <img class="footer__icon" src="icons/Vector_5.svg" alt="">
+                        <p class="footer__text">Я прошу прощения за то, что сижу на консилиуме. Я либеро, лектор, судья Маттис А.</p>
+                    </span>
+                </div>
+                <div class="footer__links">
+                    <span class="footer__list-container">
+                        <ul class="footer__list">
+                            <li><a href="#about" class="footer__link">О нас</a></li>
+                            <li><a href="#services" class="footer__link">Помощь в IT</a></li>
+                            <li><a href="#portfolio" class="footer__link">Портфолио</a></li>
+                            <li><a href="#contact_us" class="footer__link">Обратная связь</a></li>
+                        </ul> 
+                    </span>
+                    <span class="footer__subscribe">
+                        <form class="form form--subscribe" action="">
+                            <label for="email" class="form__label">Оставайтесь на связи</label>
+                            <div class="form__input-container">
+                                <input id="email" class="form__input" type="email" placeholder="Адрес электронной почты" readonly />
+                                <button type="button" class="form__button form__button--submit">Отправить</button>
+                            </div>
+                        </form>
+                    </span>
+                </div>
+            </div>
+            <div class="footer__section footer__section--bottom">
+                <p class="footer__copyright"> &copy;  2022 Nixsol <i><b> Все права защищены. </b></i></p>
+                <span class="footer__socials">
+                    <img class="footer__icon" src="icons/Vector_2.svg" alt="">
+                    <img class="footer__icon" src="icons/Vector_3.svg" alt="">
+                    <img class="footer__icon" src="icons/Vector_4.svg" alt="">
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

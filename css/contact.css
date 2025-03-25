@@ -1,0 +1,86 @@
+.contact_us_communis {
+	display: flex;
+	background: linear-gradient(90.79deg, #242424 65.31%, #E92129 98.69%);
+}
+
+.contact_us_supremus {
+	margin: 100px;
+	width: 578px;
+	height: 327px;
+}
+
+.p_recomendation_supremus {
+	font-family: Proxima Nova;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.h1_recomendation {	
+	font-family: Proxima Nova;
+	font-size: 80px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.p_recomendation_inferion {
+	font-family: Proxima Nova;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.contact_us_inferior {
+	margin: 100px;
+	margin-left: 200px;
+}
+
+.form_contact_us_inferior {
+	width: 477px;
+	height: 363px;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.input_contact_us_inferior {
+	width: 477px;
+	height: 42pxpx;
+	padding: 6px 0px 6px 20px;
+	font-family: Proxima Nova;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 10px;
+	background: transparent;
+	opacity: 0.4px;
+	border: 1px solid #FFFFFF
+}
+
+.input_contact_us_inferiors {
+	width: 477px;
+	height: 110px;
+	padding: 6px 0px 0px 20px;
+	font-family: Proxima Nova;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 10px;
+	background: transparent;
+	opacity: 0.4px;
+	border: 1px solid #FFFFFF;
+}
+
+.button_contact_us_inferior {
+
+	padding: 14px 24px 14px 24px;
+	background-color: #E4252C;
+	font-size: 20px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
