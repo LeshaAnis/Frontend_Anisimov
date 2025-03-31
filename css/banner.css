@@ -1,23 +1,23 @@
-.div_banner_img {
+.banner{
 	background-color: #000000;
 }
 
-.span_banner_img {
+.banner__container {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.div_banner_images {
+.partners {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
-.span_banner_images {
+.partners__container {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.div_banner_class_images {
+.footer-banner {
 	background: linear-gradient(120.79deg, #181818 87.75%, #FFFFFF00 5.17%);
 	width: 787px;
 	height: 153px;

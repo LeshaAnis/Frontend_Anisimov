@@ -12,7 +12,7 @@
     z-index: 9999; /* Прелоадер выше всего остального */
 }
 
-.spinner {
+.preloader__spinner {
     border: 8px solid #f3f3f3; /* Цвет фона */
     border-top: 8px solid #3498db; /* Цвет верхней части */
     border-radius: 50%;
@@ -21,18 +21,18 @@
     animation: spin 1s linear infinite; /* Анимация вращения */
 }
 
-.preloader-content {
+.preloader__content {
     text-align: center;
     margin-top: 20px; /* Отступ от спиннера */
 }
 
-.loading-image {
+.preloader__image {
     width: 80px; /* Ширина изображения */
     height: auto;
     animation: bounce 1.5s infinite; /* Анимация прыжков */
 }
 
-.loading-text {
+.preloader__text {
     margin-top: 10px;
     font-size: 18px;
     color: #333;

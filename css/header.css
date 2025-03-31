@@ -2,17 +2,17 @@
 	margin-left: 100px;
 }
 
-.nav_header {
+.nav {
 	display: flex;
 	width: 1512px;
 	height: 100px;
 }
 
-.ul_upper {
+.nav__list.nav__list--upper {
 	display: flex;
 }
 
-.ul_lower {
+.nav__list.nav__list--lower {
 	position: absolute;
 	right: 0;
 	margin-right: 100px;
@@ -21,7 +21,7 @@
 	align-items: center;
 }
 
-.li_infopmation {
+.nav__item {
 	display: flex;
 	align-items: center;
 	margin: 10px;
@@ -31,7 +31,7 @@
 
 }
 
-.li_infopmations {
+.nav__item.nav__item--feedback {
 	width: 144px;
 	height: 50px;
 	display: flex;
@@ -45,6 +45,6 @@
 	background-color: #E92129;
 }
 
-.a_img {
+.nav__icon {
 	margin: 5px;
 }

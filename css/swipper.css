@@ -33,7 +33,7 @@
 .games-banner {
 	position: absolute;
 	left: 0px;
-	bottom: 0px;
+	bottom: 48px;
     background-color: red;
     color: white;
     width: 200px;

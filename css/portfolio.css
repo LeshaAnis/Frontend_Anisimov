@@ -1,15 +1,15 @@
-.div_portfolio {
+.portfolio {
 	display: flex;
 	margin: 150px 0px;
 }
 
-.div_portfolio_supremus {
+.portfolio__header {
 	display: flex;
 	align-items: center;
 	margin-left: 100px;
 }
 
-.h1_portfolio_supremus {
+.portfolio__title {
 	font-family: Proxima Nova;
     font-size: 80px;
     font-weight: 800;
@@ -20,7 +20,7 @@
 	padding: auto;
 }
 
-.p_portfolio_supremus {
+.portfolio__description {
 	font-family: Proxima Nova;
 	font-size: 18.51px;
 	font-weight: 400;
@@ -28,7 +28,7 @@
 
 }
 
-.button_portfolio_supremus {
+.portfolio__button {
 	width: 186px;
 	height: 52px;
 	border-radius: 12px;

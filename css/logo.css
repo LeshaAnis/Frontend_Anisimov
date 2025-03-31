@@ -1,9 +1,10 @@
-.div_avatar {
+.nav__avatar {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.li_img {
+
+.nav__item {
 	margin: 5px;
 }

@@ -1,20 +1,20 @@
-.div_secundum_gradum_supremus{
+.footer__section.footer__section--top{
 	display: flex;
 	background-color: #000000;
 	color: #ffffff;
 	height: 300px;
 }
 
-.ul_tertium_gradum_inferior {
+.footer__list {
 	display: flex;
 }
 
-.div_secundum_gradum_inferior{
+.footer__section.footer__section--bottom{
 	display: flex;
 	background-color: #E4252C;
 }
 
-.div_tertium_gradum_supremus {
+.footer__contacts {
 	margin-top: 100px;
 	margin-left: 150px;
 	width: 485.91px;
@@ -23,23 +23,23 @@
 	flex-direction: column
 }
 
-.span_tertium_gradum_supremus {
+.footer__contact {
 	display: flex;
 }
 
-.span_ul_tertium_gradum_supremus {
+.footer__list-container {
 	display: flex;
 }
 
-.img_tertium_gradum_supremus {
+.footer__icon {
 	margin: 10px;
 }
 
-.p_tertium_gradum_supremus {
+.footer__text {
 	margin: 10px;
 }
 
-.p_secundum_gradum_inferior {
+.footer__copyright {
 	margin-left: 150px;
 	font-family: Proxima Nova;
 	font-size: 21px;
@@ -47,18 +47,18 @@
 	padding: 20px;
 }
 
-.span_secundum_gradum_inferior {
+.footer__socials {
 	padding: 20px;
 	position: absolute;
 	right: 0;
 	margin-right: 150px;
 }
 
-.img_secundum_gradum_inferior {
+.footer__icon {
 	margin: 5px;
 }
 
-.div_tertium_gradum_inferior {
+.footer__links {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -72,7 +72,7 @@
 	flex-direction: column;
 }
 
-.li_tertium_gradum_inferior{
+.footer__link{
 	font-family: Proxima Nova;
 	font-size: 21px;
 	font-weight: 400;
@@ -80,7 +80,7 @@
 	margin: 0px 29px;
 }
 
-.span_tertium_gradum_inferior {
+.footer__subscribe {
 	width: 640px;
 	height: 109px;
     display: flex;
@@ -89,13 +89,12 @@
 	 
 }
 
-.form_tertium_gradum_inferior {
+form.form--email {
     display: flex;
     flex-direction: column; /* Элементы располагаются в колонку */
-
 }
 
-.form-label {
+.form__label {
     margin-bottom: 10px; /* Отступ между меткой и полем ввода */
 	font-family: Proxima Nova;
 	font-size: 31px;
@@ -104,17 +103,15 @@
 
 }
 
-.input-container {
+.form__input-container {
     position: relative; /* Устанавливаем относительное позиционирование для контейнера */
-
 	width: 640px;
 	height: 20px;
 	padding: 8.x 8px 8px 18px;
-
 	border-radius: 5px 0px 0px 0px;
 }
 
-.input_tertium_gradum_inferior {
+.form__input--email {
     width: 80%; /* Поле ввода занимает всю ширину контейнера */
     padding: 10px; /* Отступы внутри поля ввода */
     padding-right: 80px; /* Добавляем отступ справа для кнопки */
@@ -122,14 +119,12 @@
 	background-color: #272727;
 	border-radius: 10px;
 	height:20px;
-
 }
 
-.button_tertium_gradum_inferior {
+.form__button.form__button--email {
     position: absolute; /* Абсолютное позиционирование для кнопки */
     right: 40px; /* Располагаем кнопку справа внутри поля ввода */
     top: 15%; /* Центрируем кнопку по вертикали */
-
     padding: 0px 0px; /* Отступы внутри кнопки */
 	background-color: #E92129;
     color:white; /* Цвет текста кнопки */
@@ -137,6 +132,4 @@
     border-radius: 10px; /* Закругленные углы кнопки */
 	width: 101px;
 	height: 34px;
-
-	
 }

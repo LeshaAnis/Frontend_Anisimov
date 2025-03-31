@@ -1,13 +1,13 @@
-.main_div_header {
+.hero {
 	margin: 100px;
 }
 
-.main_a_header {
+.hero__link {
 	display: flex;
 	
 }
 
-.main_a_h1_header {
+.hero__title {
 	display: flex;
 	align-items: center;
 	margin-right: 40px;

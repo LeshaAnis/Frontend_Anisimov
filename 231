@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NiXXCOL</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel=""type="" href="css/swiper-bundle.min.css">
 </head>
@@ -71,78 +72,78 @@
             <h1 class="services__title">Наши сервисы</h1>
         </div>
         <div id="id_services_section" class="services-section">
-            <script>
-// Объект с данными карточек
-const cards = {
-  card1: {
-    title: "Мир Танков",
-    description: "Многопользовательская онлайн-игра, в которой игроки управляют танками и сражаются друг с другом на различных картах. Игра предлагает широкий выбор моделей танков из разных стран, а также различные игровые режимы. Основное внимание уделяется командной работе и стратегии, что делает каждую битву уникальной.",
-    imageUrl: "images/mir_tankov_1.jpg"
-  },
-  card2: {
-    title: "Escape from Tarkov",
-    description: "Реалистичный шутер от первого лица с элементами RPG и выживания. Игроки попадают в вымышленный российский город, охваченный конфликтом, и должны выполнять задания, собирать ресурсы и выживать в условиях жестокой борьбы с другими игроками и NPC. Игра отличается высокой сложностью и глубоким погружением в атмосферу.",
-    imageUrl: "images/tarkov_1.jpg"
-  },
-  card3: {
-    title: "Call of Duty: Warzone",
-    description: "Бесплатная королевская битва, в которой игроки сражаются на огромной карте в команде или в одиночку. Игра включает в себя элементы тактики, стрельбы и стратегии, а также различные режимы, такие как «победа до последнего» и «выживание». Warzone известна динамичным игровым процессом и разнообразием оружия.",
-    imageUrl: "images/warzone_2.jpg"
-  },
-  card4: {
-    title: "Grand Theft Auto V",
-    description: "Экшн-игра с открытым миром, в которой игроки могут исследовать вымышленный город Лос-Сантос. Игра предлагает множество миссий, включая ограбления, гонки и другие действия. Также доступен многопользовательский режим GTA Online, в котором игроки могут взаимодействовать друг с другом в различных активностях.с.",
-    imageUrl: "images/Gta_5_1.jpg"
-  },
-  card5: {
-    title: "PUBG",
-    description: "Одна из первых игр в жанре королевской битвы, в которой до 100 игроков высаживаются на остров и сражаются за выживание. Игроки собирают оружие, броню и ресурсы, чтобы стать последним выжившим. Игра предлагает реалистичную графику и тактический геймплей.",
-    imageUrl: "images/pubg_1.jpg"
-  },
-  card6: {
-    title: "Overwatch",
-    description: "Overwatch — многопользовательская компьютерная игра в жанре геройского шутера от первого лица, разработанная компанией Blizzard Entertainment.",
-    imageUrl: "images/overwatch.jpg"
-  },
-  card7: {
-    title: "Dota 2",
-    description: "Многопользовательская онлайн-игра в жанре MOBA (многопользовательская онлайн-боевая арена). Две команды по пять игроков сражаются друг с другом, управляя уникальными героями с различными способностями. Цель игры — разрушить трон противника, используя стратегию и командное взаимодействие.",
-    imageUrl: "images/dota_2_1.jpg"
-  },
-  card8: {
-    title: "Counter-Strike 2",
-    description: "Обновленная версия популярной серии шутеров от первого лица. Игра сосредоточена на командных боях между террористами и контртеррористами. CS2 предлагает улучшенную графику, нов",
-    imageUrl: "images/cs_2_1.jpg"
-  }
-};
-// Функция для генерации HTML-шаблона карточки
-function generateCardTemplate(card) {
-  return `
-    <div class="services_section">
-      <img src="${card.imageUrl}" alt="${card.title}" class="services_section_images">
-      <p class="services_section_upper">${card.title}</p>
-      <p class="services_section_lower">${card.description}</p>
-    </div>
-  `;
-}
-// Функция для вставки карточек в указанный контейнер
-function insertCards(containerId) {
-  const container = document.getElementById(containerId);
-  // Очистим контейнер перед добавлением новых карточек
-  container.innerHTML = '';
-  // Перебираем объект cards и добавляем карточки в контейнер
-  for (const key in cards) {
-    if (cards.hasOwnProperty(key)) {
-      const cardHTML = generateCardTemplate(cards[key]);
-      container.innerHTML += cardHTML;
-    }
-  }
-}
-// Вызов функции после загрузки DOM
-document.addEventListener('DOMContentLoaded', function () {
-  insertCards('id_services_section');
-});
-    </script>
+        <script>
+            // Объект с данными карточек
+            const cards = {
+            card1: {
+                title: "Мир Танков",
+                description: "Многопользовательская онлайн-игра, в которой игроки управляют танками и сражаются друг с другом на различных картах. Игра предлагает широкий выбор моделей танков из разных стран, а также различные игровые режимы. Основное внимание уделяется командной работе и стратегии, что делает каждую битву уникальной.",
+                imageUrl: "images/mir_tankov_1.jpg"
+            },
+            card2: {
+                title: "Escape from Tarkov",
+                description: "Реалистичный шутер от первого лица с элементами RPG и выживания. Игроки попадают в вымышленный российский город, охваченный конфликтом, и должны выполнять задания, собирать ресурсы и выживать в условиях жестокой борьбы с другими игроками и NPC. Игра отличается высокой сложностью и глубоким погружением в атмосферу.",
+                imageUrl: "images/tarkov_1.jpg"
+            },
+            card3: {
+                title: "Call of Duty: Warzone",
+                description: "Бесплатная королевская битва, в которой игроки сражаются на огромной карте в команде или в одиночку. Игра включает в себя элементы тактики, стрельбы и стратегии, а также различные режимы, такие как «победа до последнего» и «выживание». Warzone известна динамичным игровым процессом и разнообразием оружия.",
+                imageUrl: "images/warzone_2.jpg"
+            },
+            card4: {
+                title: "Grand Theft Auto V",
+                description: "Экшн-игра с открытым миром, в которой игроки могут исследовать вымышленный город Лос-Сантос. Игра предлагает множество миссий, включая ограбления, гонки и другие действия. Также доступен многопользовательский режим GTA Online, в котором игроки могут взаимодействовать друг с другом в различных активностях.с.",
+                imageUrl: "images/Gta_5_1.jpg"
+            },
+            card5: {
+                title: "PUBG",
+                description: "Одна из первых игр в жанре королевской битвы, в которой до 100 игроков высаживаются на остров и сражаются за выживание. Игроки собирают оружие, броню и ресурсы, чтобы стать последним выжившим. Игра предлагает реалистичную графику и тактический геймплей.",
+                imageUrl: "images/pubg_1.jpg"
+            },
+            card6: {
+                title: "Overwatch",
+                description: "Overwatch — многопользовательская компьютерная игра в жанре геройского шутера от первого лица, разработанная компанией Blizzard Entertainment.",
+                imageUrl: "images/overwatch.jpg"
+            },
+            card7: {
+                title: "Dota 2",
+                description: "Многопользовательская онлайн-игра в жанре MOBA (многопользовательская онлайн-боевая арена). Две команды по пять игроков сражаются друг с другом, управляя уникальными героями с различными способностями. Цель игры — разрушить трон противника, используя стратегию и командное взаимодействие.",
+                imageUrl: "images/dota_2_1.jpg"
+            },
+            card8: {
+                title: "Counter-Strike 2",
+                description: "Обновленная версия популярной серии шутеров от первого лица. Игра сосредоточена на командных боях между террористами и контртеррористами. CS2 предлагает улучшенную графику, нов",
+                imageUrl: "images/cs_2_1.jpg"
+            }
+            };
+            // Функция для генерации HTML-шаблона карточки
+            function generateCardTemplate(card) {
+            return `
+                <div class="services_section">
+                <img src="${card.imageUrl}" alt="${card.title}" class="services_section_images">
+                <p class="services_section_upper">${card.title}</p>
+                <p class="services_section_lower">${card.description}</p>
+                </div>
+            `;
+            }
+            // Функция для вставки карточек в указанный контейнер
+            function insertCards(containerId) {
+            const container = document.getElementById(containerId);
+            // Очистим контейнер перед добавлением новых карточек
+            container.innerHTML = '';
+            // Перебираем объект cards и добавляем карточки в контейнер
+            for (const key in cards) {
+                if (cards.hasOwnProperty(key)) {
+                const cardHTML = generateCardTemplate(cards[key]);
+                container.innerHTML += cardHTML;
+                }
+            }
+            }
+            // Вызов функции после загрузки DOM
+            document.addEventListener('DOMContentLoaded', function () {
+            insertCards('id_services_section');
+            });
+        </script>
         </div>
         <div id="portfolio" class="portfolio">
             <div class="portfolio__header">
@@ -152,26 +153,43 @@ document.addEventListener('DOMContentLoaded', function () {
                     <button class="portfolio__button">Больше портфолио ></button>
                 </span>
             </div>
-            <div class="swiper">
-              <div class="swiper__wrapper">
-                <div class="swiper__slide">
-                  <img  class="swiper__image" src="images/Rectangle 1394.png" alt="Slide 1" />
-                  <div class="swiper__banner">
-                    <div class="swiper__text-content">
-                      <h2 class="swiper__title">Games</h2>
-                      <a href="#" class="swiper__link">Больше игр →</a>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img  class="img_swipper" src="images/Rectangle 1394.png" alt="Slide 1" />
+                  <div class="games-banner">
+                    <div class="text-content">
+                      <h2>Games</h2>
+                      <a href="#" class="see-all">Больше игр →</a>
                     </div>
                   </div>
                 </div>
-                <!-- Повторяющиеся слайды -->
+                <div class="swiper-slide">
+                  <img  class="img_swipper" src="images/photo_2024-12-18_17-28-58.jpg" alt="Slide 2" />
+                  <div class="games-banner">
+                    <div class="text-content">
+                      <h2>Games</h2>
+                      <a href="#" class="see-all">Больше игр →</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img  class="img_swipper" src="images/Rectangle 1394.png" alt="Slide 3" />
+                  <div class="games-banner">
+                    <div class="text-content">
+                      <h2>Games</h2>
+                      <a href="#" class="see-all">Больше игр →</a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Пагинация -->
-              <div class="swiper__pagination"></div>
+              <div class="swiper-pagination"></div>
               <!-- Кнопки навигации -->
-              <div class="swiper__controls">
-                 <button class="swiper__button swiper__button--prev"><</button>
-                 <button class="swiper__button swiper__button--next">></button>
-            </div>
+              <div class="slider-controls">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+              </div>
             </div>
         </div>
         <div class="banner">

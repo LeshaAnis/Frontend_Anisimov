@@ -1,15 +1,15 @@
-.contact_us_communis {
+.contact {
 	display: flex;
 	background: linear-gradient(90.79deg, #242424 65.31%, #E92129 98.69%);
 }
 
-.contact_us_supremus {
+.contact__header {
 	margin: 100px;
 	width: 578px;
 	height: 327px;
 }
 
-.p_recomendation_supremus {
+.contact__label {
 	font-family: Proxima Nova;
 	font-size: 20px;
 	font-weight: 400;
@@ -17,7 +17,7 @@
 	margin-bottom: 40px;
 }
 
-.h1_recomendation {	
+.contact__title {	
 	font-family: Proxima Nova;
 	font-size: 80px;
 	font-weight: 700;
@@ -25,19 +25,20 @@
 	margin-bottom: 40px;
 }
 
-.p_recomendation_inferion {
+.contact__description {
 	font-family: Proxima Nova;
 	font-size: 20px;
 	font-weight: 400;
 	color: #ffffff;
 }
 
-.contact_us_inferior {
+.contact__form-wrapper {
+	
 	margin: 100px;
 	margin-left: 200px;
 }
 
-.form_contact_us_inferior {
+.form.form--contact {
 	width: 477px;
 	height: 363px;
 	display: flex;
@@ -47,7 +48,7 @@
 	justify-content: center;
 }
 
-.input_contact_us_inferior {
+.form__input {
 	width: 477px;
 	height: 42pxpx;
 	padding: 6px 0px 6px 20px;
@@ -60,7 +61,7 @@
 	border: 1px solid #FFFFFF
 }
 
-.input_contact_us_inferiors {
+.form__textarea {
 	width: 477px;
 	height: 110px;
 	padding: 6px 0px 0px 20px;
@@ -73,7 +74,7 @@
 	border: 1px solid #FFFFFF;
 }
 
-.button_contact_us_inferior {
+.form__button.form__button--contact {
 
 	padding: 14px 24px 14px 24px;
 	background-color: #E4252C;

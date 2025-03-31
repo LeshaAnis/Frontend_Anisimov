@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NiXXCOL</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel=""type="" href="css/swiper-bundle.min.css">
 </head>
 <body class="conteiner">
@@ -15,7 +16,7 @@
             <p class="loading-text">Пожалуйста, подождите...</p>
         </div>
     </div>
-    <header>
+    <header class="header" >
         <nav class="nav_header">
             <ul class="ul_upper">
                 <div class="div_avatar">
@@ -43,7 +44,6 @@
                             </div>
                         </form>
                     </div>
-                </div>    
             </ul>
         </nav>
     </header>
@@ -62,9 +62,12 @@
                 <p class="p_upper_information">Лорем ипсум - основная команда. Советы по переодеванию в соответствии с жизнью</p>
                 <p class="p_lower_information">Маттис или что-то в этом роде, Маттис - мой лучший друг среди венерианцев. Священное писание - это изречение мудреца, которое говорит само за себя. В орнаре или Лео одио магна</p>
                 <div class="div_ctatic_information">
-                    <p class="p_information_block">100<span style="color: #E4252C;">+</span><br><span class="span_information_block">счастливых клиентов</span></p>
-                    <p class="p_information_block">05<span style="color: #E4252C;">+</span><br><span class="span_information_block"> лет в бизнесе</span></p>
-                    <p class="p_information_block">50<span style="color: #E4252C;">+</span><br><span class="span_information_block"> общее количество участников</span></p>
+                    <p class="p_information_block">100<span style="color: #E4252C;
+;">+</span><br><span class="span_information_block">счастливых клиентов</span></p>
+                    <p class="p_information_block">05<span style="color: #E4252C;
+;">+</span><br><span class="span_information_block"> лет в бизнесе</span></p>
+                    <p class="p_information_block">50<span style="color: #E4252C;
+;">+</span><br><span class="span_information_block"> общее количество участников</span></p>
                 </div> 
             </div>
         </div>
@@ -72,8 +75,6 @@
             <h1 class="h1_services"> Наши сервисы</h1>
         </div>
         <div id="id_services_section" class="div_services_section">
-
-
         </div>
         <div id="portfolio" class="div_portfolio">
             <div class="div_portfolio_supremus">
@@ -118,12 +119,12 @@
         
               <!-- Кнопки навигации -->
               <div class="slider-controls">
-                 <button class="prev">&lt;</button>
-                 <button class="next">&gt;</button>
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+              </div>
             </div>
-            </div>
+
         </div>
-             
         <div class="div_banner_img">
             <span class="span_banner_img">
                 <img class="banner_img" src="icons/image 8.png">
@@ -133,7 +134,6 @@
                 <img class="banner_img" src="icons/image 12.png">
             </span>    
         </div>
-       
         <div id="portfolio" class="div_portfolio">
             <div class="div_portfolio_supremus">
                 <span class="span_portfolio_supremus">
@@ -144,7 +144,6 @@
             </div>
             <div class="div_portfolio_medius">
                 <img src="images/Frame 48096192.png">
-                
             </div>
             <div class="div_portfolio_inferior">
                 <img src="images/Frame 1000000912.png">
@@ -196,7 +195,6 @@
                         <img class="img_tertium_gradum_supremus" src="icons/Vector_5.svg" alt="">
                         <p class="p_tertium_gradum_supremus" >Я прошу прощения за то, что сижу на консилиуме. Я либеро, лектор, судья Маттис А.</p>
                     </span>
-
                 </div>
                 <div class="div_tertium_gradum_inferior">
                     <span class="span_ul_tertium_gradum_supremus">
@@ -205,9 +203,7 @@
                             <li><a href="#services" class="li_tertium_gradum_inferior">Помощь в IT</a></li>
                             <li><a href="#portfolio" class="li_tertium_gradum_inferior">Портфолио</a></li>
                             <li><a href="#contact_us" class="li_tertium_gradum_inferior">Обратная связь</a></li>
-                        </ul> 
-
-                        
+                        </ul>  
                     </span>
                     <span class="span_tertium_gradum_inferior">
                         <form class="form_tertium_gradum_inferior" action="">
@@ -231,6 +227,78 @@
         </div>
 
     </footer>
+    <script>
+// Объект с данными карточек
+const cards = {
+  card1: {
+    title: "Мир Танков",
+    description: "Многопользовательская онлайн-игра, в которой игроки управляют танками и сражаются друг с другом на различных картах. Игра предлагает широкий выбор моделей танков из разных стран, а также различные игровые режимы. Основное внимание уделяется командной работе и стратегии, что делает каждую битву уникальной.",
+    imageUrl: "images/mir_tankov_1.jpg"
+  },
+  card2: {
+    title: "Escape from Tarkov",
+    description: "Реалистичный шутер от первого лица с элементами RPG и выживания. Игроки попадают в вымышленный российский город, охваченный конфликтом, и должны выполнять задания, собирать ресурсы и выживать в условиях жестокой борьбы с другими игроками и NPC. Игра отличается высокой сложностью и глубоким погружением в атмосферу.",
+    imageUrl: "images/tarkov_1.jpg"
+  },
+  card3: {
+    title: "Call of Duty: Warzone",
+    description: "Бесплатная королевская битва, в которой игроки сражаются на огромной карте в команде или в одиночку. Игра включает в себя элементы тактики, стрельбы и стратегии, а также различные режимы, такие как «победа до последнего» и «выживание». Warzone известна динамичным игровым процессом и разнообразием оружия.",
+    imageUrl: "images/warzone_2.jpg"
+  },
+  card4: {
+    title: "Grand Theft Auto V",
+    description: "Экшн-игра с открытым миром, в которой игроки могут исследовать вымышленный город Лос-Сантос. Игра предлагает множество миссий, включая ограбления, гонки и другие действия. Также доступен многопользовательский режим GTA Online, в котором игроки могут взаимодействовать друг с другом в различных активностях.с.",
+    imageUrl: "images/Gta_5_1.jpg"
+  },
+  card5: {
+    title: "PUBG",
+    description: "Одна из первых игр в жанре королевской битвы, в которой до 100 игроков высаживаются на остров и сражаются за выживание. Игроки собирают оружие, броню и ресурсы, чтобы стать последним выжившим. Игра предлагает реалистичную графику и тактический геймплей.",
+    imageUrl: "images/pubg_1.jpg"
+  },
+  card6: {
+    title: "Overwatch",
+    description: "Overwatch — многопользовательская компьютерная игра в жанре геройского шутера от первого лица, разработанная компанией Blizzard Entertainment.",
+    imageUrl: "images/overwatch.jpg"
+  },
+  card7: {
+    title: "Dota 2",
+    description: "Многопользовательская онлайн-игра в жанре MOBA (многопользовательская онлайн-боевая арена). Две команды по пять игроков сражаются друг с другом, управляя уникальными героями с различными способностями. Цель игры — разрушить трон противника, используя стратегию и командное взаимодействие.",
+    imageUrl: "images/dota_2_1.jpg"
+  },
+  card8: {
+    title: "Counter-Strike 2",
+    description: "Обновленная версия популярной серии шутеров от первого лица. Игра сосредоточена на командных боях между террористами и контртеррористами. CS2 предлагает улучшенную графику, нов",
+    imageUrl: "images/cs_2_1.jpg"
+  }
+};
+// Функция для генерации HTML-шаблона карточки
+function generateCardTemplate(card) {
+  return `
+    <div class="services_section">
+      <img src="${card.imageUrl}" alt="${card.title}" class="services_section_images">
+      <p class="services_section_upper">${card.title}</p>
+      <p class="services_section_lower">${card.description}</p>
+    </div>
+  `;
+}
+// Функция для вставки карточек в указанный контейнер
+function insertCards(containerId) {
+  const container = document.getElementById(containerId);
+  // Очистим контейнер перед добавлением новых карточек
+  container.innerHTML = '';
+  // Перебираем объект cards и добавляем карточки в контейнер
+  for (const key in cards) {
+    if (cards.hasOwnProperty(key)) {
+      const cardHTML = generateCardTemplate(cards[key]);
+      container.innerHTML += cardHTML;
+    }
+  }
+}
+// Вызов функции после загрузки DOM
+document.addEventListener('DOMContentLoaded', function () {
+  insertCards('id_services_section');
+});
+    </script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/scripts.js"></script>
