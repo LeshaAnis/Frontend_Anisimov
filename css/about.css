@@ -17,6 +17,10 @@
 
 }
 
+.about__title {
+	font-weight: 800;
+} 
+
 .about__content {
 	width: 697px;
 	height: 76px;
@@ -53,34 +57,32 @@
 
 }
 
+.about__stat-value {
+	row-gap: 9px;
+}
+
+.about__stat-value::after {
+	content: "+";
+	color: #E4252C;;
+}
+
 .about__stats {
 	display: flex;
-
+	align-items: center;
+	justify-content: space-between
 
 }
 
 .about__stat {
 	display: block;
-
-	font-family: Proxima Nova;
     font-size: 50px; 
     font-weight: 700;
-
-	text-align: center;
-
-	
-
 }
 
 .about__stat-label {
 	display: block;
-	padding: 10px;
-	font-family: Proxima Nova;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 1px;
-	text-align: center;
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
-
 }

@@ -54,6 +54,9 @@
 	font-size: 20px;
 	font-weight: 700;
 	color: #E4252C;
+	line-height: 148%;
+    letter-spacing: 2%;
+    text-align: center;
 }
 
 .services_section_lower {
@@ -61,4 +64,5 @@
 	justify-content: center;
 	text-align: center;
 	padding: 20px;
+	font-weight: 400;
 }
