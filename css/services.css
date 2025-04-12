@@ -1,3 +1,5 @@
+
+
 .services {
 	background: linear-gradient(12.79deg,#E92129 15.17%, #242424 50.25%);
 	width: 100%;
@@ -27,6 +29,8 @@
 	margin-bottom: 100px;
 }
 
+
+
 .services_section {
 	width: 400px;
 	height: 450px;
@@ -37,6 +41,8 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border-radius: 15px; 
 }
+
+
 
 .services_section_images {
 	width: 200px;
