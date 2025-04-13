@@ -35,3 +35,5 @@
 
 
 /* Подключение стилей отвечающих за адаптив */
+@import "adaptive.css";
+@import "adaptive-768.css";

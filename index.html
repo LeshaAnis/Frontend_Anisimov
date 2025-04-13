@@ -10,17 +10,22 @@
 </head>
 <body class="page">
     <div id="preloader" class="preloader">
-        <div class="preloader__spinner"></div>
+        <div class="preloader__spinner">
+            <div class="circle"></div> 
+            <div class="circle"></div> 
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div> 
+        </div>
         <div class="preloader__content">
-            <img src="icons/loading.png" alt="Загрузка..." class="preloader__image">
-            <p class="preloader__text">Пожалуйста, подождите...</p>
+            <p class="preloader__text">Пожалуйста, <br> подождите...</p>
         </div>
     </div>
     <header class="header">
         <nav class="nav">
             <ul class="nav__list nav__list--upper">
                 <div class="nav__avatar">
-                    <li><a href="index.html" class="nav__item"><img class="nav__icon" src="icons/Vector.svg"></a></li>
+                    <li><a href="index.html" class="nav__item"><img class="nav__icons" src="icons/Vector.svg"></a></li>
                     <li><a href="index.html"><img class="nav__logo" src="icons/Nixxsol.png"></a></li>
                 </div>
             </ul>
@@ -71,63 +76,9 @@
         <div id="services" class="services">
             <h1 class="services__title">Наши сервисы</h1>
         </div>
-
-            <div id="cards-container"  class="services-sections" ></div>
             <div id="id_services_section" class="services-section"></div>
  
-            <script>
-                // Функция для отображения карточек
-                function displayCards(cards) {
-                  const container = document.getElementById('cards-container');
             
-                  // Очищаем контейнер перед добавлением новых карточек
-                  container.innerHTML = '';
-            
-                  // Проходим по каждой карточке и создаем HTML-разметку
-                  for (const cardKey in cards) {
-                    if (cards.hasOwnProperty(cardKey)) {
-                      const cardData = cards[cardKey];
-                      const cardElement = document.createElement('div');
-                      cardElement.classList.add('card');
-            
-                      // Добавляем содержимое карточки
-                      cardElement.innerHTML = `
-                        <div class="services_sections">
-                        <h3 class="services_section_upper" >Карточка ${cardKey}</h3>
-                        <p class="services_section_lower"><strong>ID:</strong> ${cardData.id}</p>
-                        <p class="services_section_lower"><strong>Имя:</strong> ${cardData.name}</p>
-                        <p class="services_section_lower"><strong>Email:</strong> ${cardData.email}</p>
-                        <pclass="services_section_lower"><strong>Текст:</strong> ${cardData.body}</p>
-                        </div>
-                      `;
-            
-    
-                      // Добавляем карточку в контейнер
-                      container.appendChild(cardElement);
-                    }
-                  }
-                }
-            
-                // Получение данных с сервера
-                fetch('https://jsonplaceholder.typicode.com/comments?_limit=3')
-                  .then(response => response.json())
-                  .then(data => {
-                    // Обработка данных и создание объекта cards
-                    const cards = data.reduce((acc, comment, index) => {
-                      acc[`card-${index + 1}`] = {
-                        id: comment.id,
-                        name: comment.name,
-                        email: comment.email,
-                        body: comment.body,
-                      };
-                      return acc;
-                    }, {});
-            
-                    // Передача данных в функцию отображения карточек
-                    displayCards(cards);
-                  })
-                  .catch(error => console.error('Ошибка при получении данных:', error));
-              </script>
         </div>
         <div id="portfolio" class="portfolio">
             <div class="portfolio__header">
@@ -184,11 +135,13 @@
                     <button class="recommendations__button">Исследуйте больше</button>
                 </span>
             </div>
-            <div class="recommendations__content recommendations__content--medium">
-                <img class="recommendations__image" src="images/Frame 48096192.png">
-            </div>
-            <div class="recommendations__content recommendations__content--low">
-                <img class="recommendations__image" src="images/Frame 1000000912.png">
+            <div class="recommendations__content recommendations__content--common">
+                <div class="recommendations__content recommendations__content--medium">
+                    <img class="recommendations__image" src="images/Frame 48096192.png">
+                </div>
+                <div class="recommendations__content recommendations__content--low">
+                    <img class="recommendations__images" src="images/Frame 1000000912.png">
+                </div>
             </div>    
         </div>
         <div id="contact_us" class="contact">
