@@ -16,6 +16,11 @@
 	color: #242424;
 }
 
+.recommendations__content.recommendations__content--common {
+	display: flex	;
+}
+
+
 .recommendations__content.recommendations__content--medium {
 	padding: auto;
 }

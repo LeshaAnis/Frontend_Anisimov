@@ -4,7 +4,7 @@
 
 .nav {
 	display: flex;
-	width: 1512px;
+	max-width: 1512px;
 	height: 100px;
 }
 

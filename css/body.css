@@ -6,3 +6,7 @@
 	font-family: Proxima Nova, sans-serif;
 	
 }
+
+html {
+	overflow-x: hidden;
+}

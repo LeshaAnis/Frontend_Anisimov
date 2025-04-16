@@ -1,5 +1,5 @@
 .about {
-	width: 1122px;
+	max-width: 1122px;
 	height: 289px;
 	display: flex;
 	margin-left: 100px;
